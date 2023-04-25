@@ -1,17 +1,17 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import styles from './Menu.module.css'
+import MenuLink from '../MenuLink/Index';
 
-export default function Menu(){
-    //Usamos o Link, pois é do react-router-dom, pra página não recarregar
+export default function Menu(){    
     return (
         <header>
             <nav className={styles.navegacao}>
-                <Link className={styles.link} to='/'>
-                    Inicio
-                </Link>
-                <Link className={styles.link} to='/sobremim'>
+                <MenuLink to="/">
+                    Início
+                </MenuLink>
+                <MenuLink to="/sobremim">
                     Sobre Mim
-                </Link>
+                </MenuLink>
             </nav>
         </header>
     )

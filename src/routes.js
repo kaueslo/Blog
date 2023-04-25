@@ -8,7 +8,7 @@ import Menu from "./Componentes/Menu/Index"
 //pathname do window.location é o nome da página que estamos acessando
 // const pagina = window.location.pathname === '/' ? <Inicio /> : <SobreMim />
 
-function App() {
+function AppRoutes() {
   return(
     <BrowserRouter>
     <Menu />
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppRoutes;
